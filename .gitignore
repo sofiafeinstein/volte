@@ -1,0 +1,44 @@
+# Sensitive home-directory dirs — never commit these
+.ssh/
+.aws/
+.gnupg/
+.config/
+.cache/
+.local/
+.npm/
+.expo/
+.adobe/
+.cisco/
+.vpn/
+.cups/
+.copilot/
+.vscode/
+.vscode-shared/
+.claude/
+.claude.json
+.agents/
+.zsh_history
+.zsh_sessions/
+.zprofile
+.zshrc
+.gitconfig
+.CFUserTextEncoding
+.DS_Store
+
+# macOS
+Applications/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+Downloads/
+Documents/
+
+# Node
+node_modules/
+.env
+.env.*
+
+# Vite build output (handled per-project, but catch-all)
+dist/
