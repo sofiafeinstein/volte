@@ -97,10 +97,11 @@ export default function FaceMap() {
           position: relative;
           width: 220px;
           height: 300px;
-          background: var(--bg-card);
-          border: 1px solid var(--border);
+          background: #FAF8F5;
+          border: 1.5px solid #EDE8E0;
           border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
           overflow: visible;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.07);
         }
         .zone-dot {
           position: absolute;
@@ -108,10 +109,11 @@ export default function FaceMap() {
           height: 18px;
           border-radius: 50%;
           background: var(--accent);
-          border: 2px solid var(--bg);
+          border: 2px solid #ffffff;
           transform: translateX(-50%);
           transition: transform 0.15s;
           z-index: 2;
+          box-shadow: 0 2px 8px rgba(244,121,32,0.35);
         }
         .zone-dot.selected {
           transform: translateX(-50%) scale(1.3);

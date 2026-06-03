@@ -5,19 +5,22 @@
 }
 
 :root {
-  --bg: #1A1A1A;
-  --bg-surface: #222222;
-  --bg-card: #2A2A2A;
+  --bg: #FFFFFF;
+  --bg-surface: #F8F8F8;
+  --bg-card: #FFFFFF;
   --accent: #F47920;
-  --accent-dim: rgba(244, 121, 32, 0.12);
-  --accent-border: rgba(244, 121, 32, 0.4);
-  --text: #FFFFFF;
-  --text-muted: #9A9A9A;
-  --border: #333333;
+  --accent-dim: rgba(244, 121, 32, 0.08);
+  --accent-light: #FFF3EB;
+  --accent-border: rgba(244, 121, 32, 0.3);
+  --text: #1A1A1A;
+  --text-muted: #888888;
+  --border: #EBEBEB;
   --radius: 14px;
   --radius-sm: 8px;
-  --nav-height: 64px;
-  --bottom-nav-height: 68px;
+  --nav-height: 68px;
+  --bottom-nav-height: 72px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.10);
 }
 
 html, body, #root {

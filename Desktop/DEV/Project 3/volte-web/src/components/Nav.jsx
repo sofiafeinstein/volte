@@ -29,10 +29,9 @@ const NAV_ITEMS = [
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="9" />
-        <circle cx="9" cy="10" r="1" fill="currentColor" />
-        <circle cx="15" cy="10" r="1" fill="currentColor" />
+        <circle cx="9" cy="10" r="1" fill="currentColor" stroke="none" />
+        <circle cx="15" cy="10" r="1" fill="currentColor" stroke="none" />
         <path d="M9 15.5s1.5 2 3 2 3-2 3-2" />
-        <path d="M12 3v2M12 19v2M3 12h2M19 12h2" />
       </svg>
     ),
   },
@@ -57,12 +56,35 @@ const NAV_ITEMS = [
   },
 ]
 
+function VolteLogo() {
+  return (
+    <div className="logo-wrap">
+      <svg className="logo-ekg" viewBox="0 0 52 28" fill="none">
+        <path
+          d="M0,17 L8,17 L12,10 L16,24 L20,3 L24,28 L28,17 L44,17"
+          stroke="#F47920"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+        />
+      </svg>
+      <div className="logo-text-block">
+        <div className="logo-main-line">
+          <span className="logo-volt">VOLT</span>
+          <span className="logo-e">É</span>
+        </div>
+        <div className="logo-sub-line">LIFT PRO</div>
+      </div>
+    </div>
+  )
+}
+
 export default function Nav({ activePage, onNavigate }) {
   return (
     <>
       <header className="top-bar">
-        <span className="top-bar-logo">VOLT<span className="accent">É</span></span>
-        <span className="top-bar-sub">Lift Pro</span>
+        <VolteLogo />
       </header>
       <nav className="bottom-nav">
         {NAV_ITEMS.map((item) => (
@@ -73,6 +95,7 @@ export default function Nav({ activePage, onNavigate }) {
           >
             <span className="nav-icon">{item.icon}</span>
             <span className="nav-label">{item.label}</span>
+            {activePage === item.id && <span className="nav-dot" />}
           </button>
         ))}
       </nav>
